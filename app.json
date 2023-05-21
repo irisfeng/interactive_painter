@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "interactive_painter",
+    "slug": "interactive_painter"
+  }
+}
