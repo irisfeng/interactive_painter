@@ -7,7 +7,11 @@ const ArtworkCard = ({ item, onPress }) => {
     return (
         <TouchableOpacity onPress={onPress}>
             <View style={styles.card}>
-                <Image source={item.uri} style={styles.image} resizeMode="cover" />
+                <Image 
+                    source={item.uri} 
+                    style={styles.image} 
+                    resizeMode="cover" 
+                />
             </View>
         </TouchableOpacity>
     );

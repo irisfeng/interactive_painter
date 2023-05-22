@@ -24,6 +24,8 @@ const Greatartworks = () => {
   const isLoading = false;
   const error = false;
 
+  // TODO: handle cardPress 
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
