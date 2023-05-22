@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, ScrollView, SafeAreaView } from 'react-native';
+import { View, ScrollView, SafeAreaView, FlatList } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 
 import { COLORS, icons, images, SIZES } from '../constants';
@@ -24,8 +24,19 @@ const Home = () => {
 
                 }}
             />
+            <FlatList
+                contentContainerStyle={{ padding: SIZES.medium }}
+                data={[
+                    { key: 'Welcome', component: <Welcome /> },
+                    { key: 'Greatartworks', component: <Greatartworks /> },
+                    { key: 'Greatartists', component: <Greatartists /> },
+                ]}
+                renderItem={({ item }) => item.component}
+            />
 
-            <ScrollView showsVerticalScrollIndicator={false}>
+
+
+            {/* <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={{ 
                         flex: 1, 
                         padding: SIZES.medium 
@@ -40,7 +51,7 @@ const Home = () => {
                     <Greatartists />
                     
                 </View>
-            </ScrollView>
+            </ScrollView> */}
 
         </SafeAreaView>
     );

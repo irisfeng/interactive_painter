@@ -14,14 +14,14 @@ const Greatartists = () => {
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
-     
+
       <FlatList 
         data={artists}
         renderItem={({ item }) => (
           <View style={styles.artistContainer}>
             <Text style={styles.artistName}>{item}</Text>
             <TouchableOpacity style={styles.artistButton}>
-              <Text style={styles.artistButtonText}>></Text>
+              <Text style={styles.artistButtonText}>{'>'}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -29,6 +29,7 @@ const Greatartists = () => {
       />
       
     </View>
+    
   );
 }
 
