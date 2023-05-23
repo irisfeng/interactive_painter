@@ -8,14 +8,16 @@ import Greatartists from "./home/greatartists/Greatartists";
 import Greatartworks from "./home/greatartworks/Greatartworks";
 
 // job details screen
-import Company from "./jobdetails/company/Company";
-import { default as JobTabs } from "./jobdetails/tabs/Tabs";
-import { default as JobAbout } from "./jobdetails/about/About";
-import { default as JobFooter } from "./jobdetails/footer/Footer";
-import Specifics from "./jobdetails/specifics/Specifics";
+// import Company from "./jobdetails/company/Company";
+// import { default as JobTabs } from "./jobdetails/tabs/Tabs";
+// import { default as JobAbout } from "./jobdetails/about/About";
+// import { default as JobFooter } from "./jobdetails/footer/Footer";
+// import Specifics from "./jobdetails/specifics/Specifics";
 
 // common
 import NearbyJobCard from "./common/cards/nearby/NearbyJobCard";
+import ArtistCard from "./common/cards/artist/ArtistCard";
+import ArtworkCard from "./common/cards/artwork/ArtworkCard";
 
 export {
   ScreenHeaderBtn,
@@ -24,10 +26,12 @@ export {
   Greatartworks,
   // Nearbyjobs,
   // Popularjobs,
-  Company,
-  JobTabs,
-  JobAbout,
-  JobFooter,
-  Specifics,
-  NearbyJobCard
+  // Company,
+  // JobTabs,
+  // JobAbout,
+  // JobFooter,
+  // Specifics,
+  // NearbyJobCard,
+  ArtistCard,
+  ArtworkCard
 };
